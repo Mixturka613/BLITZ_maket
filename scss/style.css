@@ -12,6 +12,13 @@
   width: 940px;
 }
 
+@font-face {
+  font-family: "HelveticaNeueCyr-Thin";
+  src: url("../fonts/HelveticaNeueCyr-Thin.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
 .header .header__top-line {
   width: 100%;
   background: #eaeaea;
@@ -275,5 +282,186 @@
   .info-about-slide {
     display: none;
   }
+}
+
+.features__inner {
+  margin: 90px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.features__inner .features__blcok {
+  width: 300px;
+}
+
+.features__inner .features__blcok .features__titel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.features__inner .features__blcok .features__titel h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 25px;
+  width: 200px;
+  margin-left: 30px;
+  color: #474747;
+}
+
+.features__inner .features__blcok .features__titel img {
+  height: 50px;
+}
+
+.features__inner p {
+  font-family: "HelveticaNeueCyr-Thin";
+  color: #414141;
+  font-size: 15px;
+  margin: 20px 0;
+}
+
+.features__inner a {
+  color: #474747;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Bebas Neue', cursive;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.features__inner a span {
+  margin-left: 10px;
+}
+
+.features__inner a:hover {
+  color: #a5a5a5;
+}
+
+@media (min-width: 200px) and (max-width: 600px) {
+  .features__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .features__inner .features__blcok {
+    width: 280px;
+  }
+  .features__inner .features__blcok:not(:first-child) {
+    margin-top: 100px;
+  }
+  .features__inner .features__blcok .features__titel h1 {
+    font-size: 35px;
+  }
+  .features__inner .features__blcok p {
+    font-size: 30px;
+  }
+  .features__inner .features__blcok a {
+    font-size: 30px;
+  }
+  .features__inner .features__blcok a img {
+    height: 20px;
+  }
+}
+
+.lw__work {
+  background: #fff url(../../img/HeaderBackground.png) no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.lw__work .lw-titel {
+  background: #fff;
+  width: 180px;
+}
+
+.lw__work .lw-titel h1 {
+  font-size: 25px;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  color: #474747;
+}
+
+.lw__carts {
+  width: 940px;
+  margin: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 220px;
+}
+
+.lw__carts .cart {
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+.lw__carts .cart:not(:first-child) {
+  margin-left: 20px;
+}
+
+.lw__carts .cart h1 {
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #474747;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.lw__carts .cart p {
+  font-family: "HelveticaNeueCyr-Thin";
+  font-size: 15px;
+  color: #474747;
+}
+
+.lw__carts .cart a {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #474747;
+  font-size: 15px;
+  font-family: 'Bebas Neue', cursive;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.lw__carts .cart a span {
+  margin-left: 10px;
+}
+
+.lw__carts .cart a:hover {
+  color: #a5a5a5;
 }
 /*# sourceMappingURL=style.css.map */
