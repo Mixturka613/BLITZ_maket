@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.header .header__top-line {
+  width: 100%;
+  background: #eaeaea;
+  height: 7px;
+}
+
+.header .header__top-line .header__top-line-img {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header .header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 25px 0;
+}
+
+.header .header__inner .logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 42px;
+}
+
+.header .header__inner .logo a {
+  color: #474747;
+  text-decoration: none;
+}
+
+.header .header__inner .navbar {
+  font-family: 'Bebas Neue', cursive;
+  text-transform: uppercase;
+}
+
+.header .header__inner .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.header .header__inner .navbar ul li {
+  text-align: left;
+}
+
+.header .header__inner .navbar ul li:not(:last-child) {
+  margin-right: 60px;
+}
+
+.header .header__inner .navbar ul li span {
+  display: block;
+  font-size: 12px;
+  color: #a5a5a5;
+}
+
+.header .header__inner .navbar ul li a {
+  font-size: 20px;
+  color: #474747;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header .header__inner .navbar ul li a:hover {
+  color: #a5a5a5;
+}
+/*# sourceMappingURL=style.css.map */
