@@ -83,4 +83,66 @@
 .header .header__inner .navbar ul li a:hover {
   color: #a5a5a5;
 }
+
+@media (min-width: 960px) and (max-width: 1200px) {
+  .header__inner {
+    margin: 0 50px;
+  }
+  .header__top-line {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1199px) {
+  .header__inner {
+    margin: 0 50px;
+  }
+  .header__top-line {
+    display: none;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 600px) {
+  .header .header__inner {
+    display: block;
+    text-align: center;
+  }
+  .header .header__inner .logo {
+    font-size: 80px;
+  }
+  .header .header__inner .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header .header__inner .navbar ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header .header__inner .navbar ul li {
+    margin: 0;
+    text-align: center;
+  }
+  .header .header__inner .navbar ul li:not(:last-child), .header .header__inner .navbar ul li:not(:first-child) {
+    margin: 0;
+    margin-top: 20px;
+  }
+  .header .header__inner .navbar ul li span {
+    font-size: 40px;
+  }
+  .header .header__inner .navbar ul li a {
+    font-size: 60px;
+  }
+  .header__top-line {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
