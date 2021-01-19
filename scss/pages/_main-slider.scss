@@ -1,0 +1,98 @@
+.slide {
+    position: relative;
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    justify-content: center;
+    .slide__info {
+        width: 940px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        outline: none;
+        .slide__text {
+            padding: 10px 20px;
+            background: $main-color;
+            text-transform: uppercase;
+            .slide-text-first {
+                display: block;
+                font-size: 14px;
+                color: #9a9a9a;
+            }
+            .slide-text-secondary  {
+                font-size: 28px;
+                color: #fff;
+                letter-spacing: 1px;
+            }
+        }
+        .slide__number {
+            display: flex;
+            align-items: center;
+            .slide-position {
+                cursor: pointer;
+                content: "";
+                display: block;
+                width: 23px;
+                height: 5px;
+                background: #fff;
+                margin: 0 40px 15px 0;
+                transition: 0.5;
+                &:not(:last-child) {
+                    margin-right: 7px;
+                }
+                &:hover {
+                    background:#444444;
+                }
+            }
+            .slide-active {
+                background: #444444;
+            }
+        }
+    }
+}
+
+.info-about-slide {
+    transform: translateY(-15%);
+    width: 940px;
+    .info__img {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        transform: translateY(10%);
+    }
+    .info-a-s__text {
+        margin: 0;
+        padding: 20px 15px;
+        color: $main-color;
+        background: #f6f6f6;
+        font-family: 'Bebas Neue', cursive;
+        h3 {
+            font-size: 16px; 
+            letter-spacing: 0.8px;
+        }
+        p {
+            margin-top: 15px;
+            font-size: 12px;
+        }
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1199px) {
+    .slide{
+        .slide__number {
+            display: none; 
+        }
+    }
+}
+
+@media (min-width: 200px) and (max-width: 600px) {
+    .slide { 
+        display: none;
+    }
+    .info-about-slide {
+        display: none;
+    }
+}
