@@ -25,6 +25,9 @@
 }
 
 @media (min-width: 600px) and (max-width: 940px) {
+    .footer {
+        position: fixed;
+    }
     .footer__inner {
         flex-direction: column; 
     }
@@ -33,5 +36,8 @@
 @media (min-width: 200px) and (max-width: 600px) {
     .footer__inner {
         flex-direction: column; 
+    }
+    .footer {
+        position: fixed;
     }
 }
