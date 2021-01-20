@@ -1,0 +1,94 @@
+.about {
+    .about__text {
+        text-align: left;
+        .about__titel {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 25px;
+            color: $main-color;
+            letter-spacing: 0.7px;
+        }
+        .about__sub-title {
+            color: $p-color;
+            font-family: "HelveticaNeueCyr-Thin"; 
+            width: 500px;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+    }
+    .about__line {
+        background: #fff url(../../img/about/HeaderBackground.png) no-repeat;
+        display: flex;
+        justify-content: center;
+        height: 5px;
+        margin: 20px 0;
+    }
+    .about__carts {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 40px 0;
+        .about__cart {
+            width: 300px;
+            text-align: left;
+            .about__cart-title {
+                font-family: 'Bebas Neue', cursive;
+                font-size: 25px;
+                color: $main-color;
+                letter-spacing: 0.7px;
+            }
+            .about__cart-sub-title {
+                color: $p-color;
+            }
+            p {
+                font-size: 15px;
+                color: $main-color;
+                margin-top: 20px;
+                font-family: "HelveticaNeueCyr-Thin"; 
+            }
+        }
+    }
+    .about-cats-person {
+        margin: 50px 0;
+        display: flex;
+        justify-content: space-between;
+        .cart-person {
+            width: 298px;
+            .cart-person-bot-part {
+                padding: 10px 10px;
+                .cart-person_title {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-family: 'Bebas Neue', cursive;
+                    h1 {
+                        color: $main-color;
+                        font-size: 20px;
+                        letter-spacing: 1px;
+                    }
+                    h2 {
+                        font-size: 15px;
+                        color: $main-color;
+                        letter-spacing: 1px;
+                    }
+                }
+                .classification {
+                    font-size: 12px;
+                    color: #949393;
+                    font-family: "HelveticaNeueCyr-Thin"; 
+                    margin: 10px 0;
+                }
+                p {
+                    color: $post-titel-color;
+                    font-size: 15px;
+                    font-family: "HelveticaNeueCyr-Thin"; 
+                }
+            }
+        }
+    }
+}
+
+.about__shadow {
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.7);
+    -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.7);
+    box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.7);
+}
