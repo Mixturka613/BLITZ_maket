@@ -1,0 +1,73 @@
+.projects {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .projects__main-part {
+        flex: 3;
+        .navbar__categori-proj {
+            ul {
+                list-style: none;
+                display: flex;
+                li {
+                    text-transform: uppercase;
+                    color: $main-color;
+                    font-size: 15px;
+                    font-family: 'Bebas Neue', cursive;
+                    cursor: pointer;
+                    transition: 0.5s;
+                    &:not(:last-child) {
+                        padding-right: 20px;
+                        border-right: 1px solid $main-color;
+                    }
+                    &:not(:first-child) {
+                        margin-left: 20px;
+                    }
+                    &:hover {
+                        color: $p-color;
+                    }
+                }
+            }
+        }
+        .projects__main__posts{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            width: 90%;
+            .projects__main_post {
+                margin-top: 20px;
+                border: 1px solid $p-color;
+                flex: 1;
+                max-width: 207px;
+                img {
+                    transform: translateY(-2px) translateX(-2px);
+                    width: 208px;
+                }
+                .post_text {
+                    margin: 10px;
+                    h1 {
+                        font-size: 16px;
+                        color: $main-color;
+                        font-family: 'Bebas Neue', cursive;
+                        text-transform: uppercase;
+                    }
+                    h2 {
+                        margin: 10px 0;
+                        color: #949393;
+                        font-size: 12px;
+                        font-family: 'Bebas Neue', cursive;
+                        text-transform: uppercase;
+                    }
+                    p {
+                        font-family: "HelveticaNeueCyr-Thin"; 
+                        font-size: 12px;
+                        color: $post-titel-color;
+                    }
+                }
+            }
+        }
+    }
+    .projects__menu-part {
+        flex: 1;
+    }
+}

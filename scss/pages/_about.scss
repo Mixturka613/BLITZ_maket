@@ -1,6 +1,7 @@
 .about {
     .about__text {
         text-align: left;
+        max-width: 500px;
         .about__titel {
             font-family: 'Bebas Neue', cursive;
             font-size: 25px;
@@ -9,8 +10,7 @@
         }
         .about__sub-title {
             color: $p-color;
-            font-family: "HelveticaNeueCyr-Thin"; 
-            width: 500px;
+            font-family: "HelveticaNeueCyr-Thin";   
             font-size: 12px;
             margin-top: 10px;
         }
@@ -25,7 +25,6 @@
     .about__carts {
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
         margin: 40px 0;
         .about__cart {
             width: 300px;
@@ -91,4 +90,74 @@
     -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.7);
     -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.7);
     box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.7);
+}
+
+@media (min-width: 700px) and (max-width: 950px) {
+    .about-cats-person {
+        flex-direction: column;
+        align-items: center;
+        .cart-person {
+            margin-top: 50px;
+        }
+    } 
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .about__text {
+            margin-top:50px;
+            align-items: center;
+            .about__titel {
+                text-align: center;
+            }
+            .about__sub-title {
+                text-align: center;
+                max-width: none;
+            }
+        }
+    }
+
+    .about__carts {
+        flex-direction: column;
+        align-items: center;
+        .about__cart {
+            margin-top: 50px;
+        }
+    }
+    
+}
+
+@media (min-width: 200px) and (max-width: 699px) {
+    .about-cats-person {
+        flex-direction: column;
+        align-items: center;
+        .cart-person {
+            margin-top: 50px;
+        }
+    } 
+    .about__carts {
+        flex-direction: column;
+        align-items: center;
+        .about__cart {
+            margin-top: 50px;
+        }
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .about__text {
+            margin-top:50px;
+            align-items: center;
+            .about__titel {
+                text-align: center;
+            }
+            .about__sub-title {
+                text-align: center;
+                max-width: none;
+            }
+        }
+    }
+    
 }

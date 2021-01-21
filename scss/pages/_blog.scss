@@ -27,7 +27,7 @@
     display: flex;
     justify-content: space-between;
     .b-c__main-part {
-        width: 70%;
+        flex: 3;
         .b-c__main-part__titel {
             text-align: left;
             h1 {
@@ -46,6 +46,7 @@
         }
         .b-c__main-part__content {
             text-align: left;
+            width: 100%;
             .b-c-artical {
                 margin-top: 20px;
                 .artical-top__line {
@@ -65,12 +66,13 @@
                     margin: 10px 0;
                 }
                 .artical__info {
+                    width: 90%;
                     margin-top: 20px;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     .artical__info__briefly {
-                        width: 25%;
+                        width: 20%;
                         .a_i_brf {
                             .a_i_brf_titel {
                                 margin-top: 8px;
@@ -103,60 +105,70 @@
             
         }
     }
-    .b-c__second-part {
-        width: 25%;
-        margin-top: 46px;
-        .b-c__section {
-            margin: 20px 0;
-            .b-c__sections__titel {
-                font-family: 'Bebas Neue', cursive;
-                color: $post-titel-color;
-                font-size: 15px;
-                letter-spacing: 1px;
-            }
-            .sections-line-img {
-                background: #fff url(../../img/blog/Line.png);
-                display: flex;
-                justify-content: center;
-                height: 5px;
-                margin:  10px 0;
-            }
-            p {
-                color: $post-titel-color;
-                font-size: 14px;
-                font-family: "HelveticaNeueCyr-Thin"; 
-            }
-            ul {
-                list-style: none;
-                li {
-                    margin-top: 10px;
-                    a {
-                        color: $post-titel-color;
-                        font-size: 15px;
-                        font-family: "HelveticaNeueCyr-Thin"; 
-                        text-decoration: none;
-                    }
-                }
-            }
-            .section__twit {
-                margin-top: 20px;
-                .sections-twit-post {
+
+}
+
+.b-c__second-part {
+    margin-top: 46px;
+    flex: 1;
+    .b-c__section {
+        margin: 20px 0;
+        .b-c__sections__titel {
+            font-family: 'Bebas Neue', cursive;
+            color: $post-titel-color;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+        .sections-line-img {
+            background: #fff url(../../img/blog/Line.png);
+            display: flex;
+            justify-content: center;
+            height: 5px;
+            margin:  10px 0;
+        }
+        p {
+            color: $post-titel-color;
+            font-size: 14px;
+            font-family: "HelveticaNeueCyr-Thin"; 
+        }
+        ul {
+            list-style: none;
+            li {
+                margin-top: 10px;
+                a {
                     color: $post-titel-color;
                     font-size: 15px;
                     font-family: "HelveticaNeueCyr-Thin"; 
-                    .twit-excretion {
-                        color: #999999;
-                    }
-                }
-                .sections-twit-time {
-                    margin-top: 5px;
-                    color: #999999;
-                    font-size: 12px;
-                    font-family: "HelveticaNeueCyr-Thin"; 
+                    text-decoration: none;
                 }
             }
         }
+        .section__twit {
+            margin-top: 20px;
+            .sections-twit-post {
+                color: $post-titel-color;
+                font-size: 15px;
+                font-family: "HelveticaNeueCyr-Thin"; 
+                .twit-excretion {
+                    color: #999999;
+                }
+            }
+            .sections-twit-time {
+                margin-top: 5px;
+                color: #999999;
+                font-size: 12px;
+                font-family: "HelveticaNeueCyr-Thin"; 
+            }
+        }
     }
+}
+
+.artical-top__line {
+    background: #fff url(../../img/blog/HeaderBack.png) no-repeat;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 30px auto;
 }
 
 @media (min-width: 750px) and (max-width: 1200px) {
